@@ -3,12 +3,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>test</title>
+<script src="https://cn.avoscloud.com/scripts/lib/av-0.3.1.min.js"></script>
+<script type="text/javascript">
+AV.initialize("d9umqa1b6njgs404o0ghsouluo15kfggropwyx7lfyynsnyr", "0aa5ktxaqihohwzum07vtuhw4i6eo8056przjcg3oyted0oa");
+var TestObject = AV.Object.extend("TestObject");
+var testObject = new TestObject();
+testObject.save({foo: "bar11111111111111111111"}, {
+  success: function(object) {
+  alert("AVOS Cloud works!");
+  }
+});
+
+</script>
 </head>
 
 <body>
-第一个页面
-<script type="text/javascript">
-hello();
-</script>
 </body>
 </html>
