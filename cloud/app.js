@@ -15,9 +15,9 @@ app.get('/hello', function(req, res) {
 app.get("/test",function(req, res){
 	var TestObject = AV.Object.extend("TestObject");
 	var testObject = new TestObject();
-	testObject.save({foo:"bar11111111111111111111"}, {
+	testObject.save({foo:"awei"}, {
   success: function(object) {
-  res.send("AVOS Cloud works!");
+  res.send("good");
   }
 });
 });
